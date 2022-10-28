@@ -17,8 +17,8 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   color: #fff;
   background: url('./images/download\ \(4\).jpg');
   background-repeat: no-repeat;
