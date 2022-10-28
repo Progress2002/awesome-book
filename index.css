@@ -74,8 +74,7 @@ header ul #contact-page {
 
 main {
   width: 100%;
-  height: 468px;
-  margin: 50px auto auto;
+  height: 79%;
   position: relative;
 }
 
@@ -152,7 +151,7 @@ main {
   display: flex;
   justify-content: center;
   width: 90%;
-  margin: 40px auto 0;
+  margin: 90px auto 0;
 }
 
 form {
@@ -200,7 +199,6 @@ form input {
 
 footer {
   width: 100%;
-  border: 1px solid #d4d2d2;
   padding: 10px;
   overflow: hidden;
 }
