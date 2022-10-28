@@ -17,13 +17,12 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
+  overflow: hidden;
   color: #fff;
   background: url('./images/download\ \(4\).jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
   background-position: center;
 }
 
@@ -75,20 +74,25 @@ header ul #contact-page {
 
 main {
   width: 100%;
-  height: 100%;
-  margin: auto;
+  height: auto;
+  margin: 50px auto auto;
+  position: relative;
 }
 
 .section {
+  position: fixed;
   margin: 100px 0 50px;
   padding: 15px;
-}
-
-.list-section {
-  position: fixed;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.list-section {
+  margin-top: 60px;
+  position: fixed;
+  top: 70px;
+  left: 10px;
   width: 95%;
 }
 
@@ -158,11 +162,10 @@ form {
 form input {
   width: 100%;
   padding: 6px 7px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
   outline: none;
-
-  /* border-radius: 10px; */
   color: #fff;
   border: 1px solid #c2c3c5;
   background-color: rgba(255, 255, 255, 0);
@@ -173,14 +176,14 @@ form input {
 }
 
 .form-btn button {
-  padding: 6px 10px;
+  padding: 8px 15px;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
   background-color: #52545a;
   color: #fff;
-  border: 1px solid #d3d3d3;
-  box-shadow: 2px 2px 1px #d3d3d3;
+  border: 1px solid #d3d3d3ab;
+  box-shadow: 2px 2px 1px #d3d3d3ce;
   margin-right: 5px;
 }
 
@@ -188,6 +191,8 @@ form input {
   color: rgb(241, 43, 43);
   width: 50%;
   margin: auto;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .hiden {
@@ -195,7 +200,7 @@ form input {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   border: 1px solid #d4d2d2;
