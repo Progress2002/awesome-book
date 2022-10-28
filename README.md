@@ -4,7 +4,7 @@
 
 ## Description
 
-Awesome Books is a single page website (SPW) that allow users to stor a book with title and author name and add to their books list on the page.
+Awesome Books is a single page website (SPW) that allow users to store a book with title and author name and add to their books list on the page.
 
 ## Build With
 
