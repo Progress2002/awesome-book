@@ -25,9 +25,9 @@ Awesome Books is a single page website (SPW) that allow users to stor a book wit
   - [ ] LocalStorage
   - [ ] Github workflow
 
-<!-- ## Live Demo 
+## Live Demo 
 
-[Live Demo Link]() -->
+[Live Demo Link](https://progress2002.github.io/awesome-book/)
 
 <!-- ## Link to Presentation on this Project
 
