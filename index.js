@@ -22,7 +22,7 @@ form.onsubmit = (e) => {
     }, 3000);
   } else {
     error.innerHTML = '';
-    PAGE_NAVIGATION()
+    PAGE_NAVIGATION();
     library.add({
       id: Date.now().toString(),
       title: title.value,
