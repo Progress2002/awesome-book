@@ -6,23 +6,39 @@
 }
 
 .date {
-  color: white;
   text-align: right;
   padding: 20px;
 }
 
-#list {
-  color: rgb(241, 43, 43);
+#list,
+.date {
+  color: rgb(255, 9, 9);
+  font-weight: bold;
 }
 
 body {
-  background-color: #272a31;
-  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: url('./images/download\ \(4\).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #553f3d8a;
+  z-index: -10;
 }
 
 h2 {
   margin-bottom: 30px;
   text-align: center;
+  text-decoration: underline;
 }
 
 header {
@@ -64,7 +80,15 @@ main {
 
 .section {
   margin: 100px 0 50px;
-  padding: 5px;
+  padding: 15px;
+}
+
+.list-section {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
 }
 
 .contact {
@@ -85,7 +109,7 @@ main {
 
 #awesomeBooks {
   border: 1px solid #d4d2d2;
-  margin: 10px;
+  margin: 0;
 }
 
 #awesomeBooks ul {
@@ -98,10 +122,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid;
 }
 
 #awesomeBooks li:hover {
-  background-color: #52545a;
+  background-color: #5d5d5e80;
 }
 
 #awesomeBooks li span {
@@ -113,13 +138,15 @@ main {
   padding: 5px 10px;
   cursor: pointer;
   font-weight: bold;
-  color: rgb(241, 43, 43);
+  color: rgb(223, 3, 3);
+  border: none;
+  background-color: rgba(255, 249, 249, 0.267);
 }
 
 .form-section {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 90%;
   margin: 40px auto;
 }
 
@@ -133,11 +160,11 @@ form input {
   font-size: 16px;
   font-weight: bold;
   outline: none;
-  border-radius: 10px;
-}
 
-form input:hover {
-  background-color: #f4f5f7;
+  /* border-radius: 10px; */
+  color: #fff;
+  border: 1px solid #c2c3c5;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .form-btn {
@@ -168,7 +195,7 @@ form input:hover {
 
 footer {
   position: absolute;
-  bottom: 3px;
+  bottom: 0;
   width: 100%;
   border: 1px solid #d4d2d2;
   padding: 10px;
@@ -179,6 +206,14 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  .date {
+    text-align: right;
+    padding: 20px;
+    margin-right: 150px;
+
+    /* font-size: 20px; */
+  }
+
   header {
     padding: 7px 80px;
   }
@@ -198,6 +233,19 @@ footer p {
   .section {
     width: 600px;
     margin: 100px auto;
+  }
+
+  .list-section {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 100px auto;
+    width: 600px;
+  }
+
+  form input:hover {
+    background-color: #f4f5f723;
   }
 
   .contact {
