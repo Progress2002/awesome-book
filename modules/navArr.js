@@ -1,6 +1,4 @@
-/* eslint-disable */
-
-export const list = [
+const list = [
   {
     linkId: 'list',
     pageId: 'listpage',
@@ -14,3 +12,5 @@ export const list = [
     pageId: 'contactpage',
   },
 ];
+
+export default list;

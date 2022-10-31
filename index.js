@@ -1,7 +1,7 @@
-import { PAGE_NAVIGATION } from './modules/pageNav.js';
+import PAGE_NAVIGATION from './modules/pageNav.js';
 import { awesomeBooks, form, error } from './modules/variables.js';
-import { Book } from './modules/book.js';
-import { DISPLAY_TIME_DATE } from './modules/date.js';
+import Book from './modules/book.js';
+import DISPLAY_TIME_DATE from './modules/date.js';
 
 // displays time on the page
 DISPLAY_TIME_DATE();

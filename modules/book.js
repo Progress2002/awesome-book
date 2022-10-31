@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { awesomeBooks } from './variables.js';
 
 class Book {
@@ -45,4 +44,4 @@ class Book {
   }
 }
 
-export { Book };
+export default Book;
